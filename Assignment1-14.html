@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Program 14 </title>
+	</head>
+
+<body>
+	<script>
+	
+	function range(start, end) {
+	  return Array(end - start + 1).fill().map((_, idx) => start + idx)
+	}
+	var result = range(1, 100); 
+	
+	
+	let largest = arr[0];
+	let len = result.length;
+	
+	for( i = 0;i < len;i++) {
+		if(result.length < arr[i]) {
+			largest = arr[i];
+		}
+		document.write(largest);
+	}
+	</script>
+</body>
+</html>

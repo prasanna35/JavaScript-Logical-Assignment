@@ -1,0 +1,31 @@
+ <html>
+ <head>
+	  <title>Program 17</title>
+ </head>
+
+ <body>
+
+	<script>
+				
+			 var array = [1, 2, 3, 4, 5, 6];
+			 var input = window.prompt("Enter value of k element: ");
+			 
+			 document.write(" Original Array : " + array + "<br>");
+			   
+			 for(var i = 0; i < input; i++){
+
+				a = array[0];  
+			  
+				for(j = 0; j < array.length-1; j++){  
+					array[j] = array[j+1];  
+				}  
+				array[j] = a;  
+			}  
+			  
+			document.write(" Rotated Array : " + array);  
+				
+	</script>
+	
+	
+</body>
+</html>
