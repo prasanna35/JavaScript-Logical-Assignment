@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 18</title>
+
+</head>
+
+<body>
+    <div >
+        <h1>Translate English to Pig Latin</h1>
+        <textfield>English: </textfield>
+        <input id="inputtext" value=""><br>
+        <button id="translate" onclick="myFunction()">Translate</button><br>
+        <textfield id="output"></textfield>
+    </div>
+    <script >
+        function myFunction(){
+    var text=document.getElementById("inputtext").value;
+    var wordintext=text.split(" ");
+    var out="";
+    for(i=0;i<wordintext.length;i++){
+        out=out+wordintext[i].slice(1,)+wordintext[i][0]+"ay ";
+    }
+    document.getElementById("output").innerHTML="<b>Pig Latin : </b>"+out;
+}
+    </script>
+</body>
+</html>

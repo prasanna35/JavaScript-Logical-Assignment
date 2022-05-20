@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 16</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    
+    table, th, td {
+      border:1px solid red;
+      
+    }
+    </style>
+<body onload="myFunction()">
+    <table id="table" style="width:100%">
+            
+    </table>
+    <script>
+        function myFunction(){
+        var rows=prompt("Enter number of rows:");
+        var columns=prompt("Enter number of columns:");
+        console.log(rows);
+        console.log(columns);
+        var o="";
+        for(i=0;i<rows;i++){
+        o+="<tr>";
+        for(j=0;j<columns;j++){
+            o+="<td>"+"Row:"+String(i)+" Column:"+String(j)+"</td>";
+        }
+        o+="</tr><br>";
+    }
+    document.getElementById("table").innerHTML=o;
+}
+    </script>
+</body>
+</html>
